@@ -229,10 +229,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 /* Modal window */
 
-.register-form { 
-
-    display: flex;
- }
 
 .backdrop {
     opacity: 1;
@@ -312,6 +308,37 @@ font-family: Roboto, sans-serif;
     color: var(--accent-color-title);
     background-color: var(--accent-color-button);
 }
+
+/* Register form */
+
+/* .register-form {
+
+    display: flex;
+} */
+
+.register-form-input:invalid {
+    outline-color: red;
+
+}
+
+.register-form-input:valid {
+    outline-color: green;
+}
+
+.register-form-btn {
+    background-color: transparent;
+    color: gray;
+}
+
+.label {
+    display: block;
+}
+
+.register-form-message:placeholder-shown {
+    outline-color: orange;
+}
+
+
 
 /* section 2*/
 .sect { font-size: 0px; }
