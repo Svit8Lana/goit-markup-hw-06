@@ -105,7 +105,32 @@
                 </label>
             </div>
         
-            <label class="register-form-agreement">
+<div class="modal-field">
+    <input 
+    type="checkbox"
+    class="input-check  visually-hidden"
+    name="privacy"
+    value="true"
+    id="privacy"
+    />
+    <label for="privacy" class="check-text">
+        <span  class="register-form-desc">
+                   
+                    
+            <svg class="check-icon" width="16" height="15">
+                <use href="./images/icons.svg#unchecked"></use> 
+            </svg>
+        </span>
+Погоджуюся з розсилкою та приймаю
+<a class="register-form-link" 
+href="" 
+target="_blank"> Умови договору</a>
+
+</label> 
+</div>
+
+            
+            <!-- <label class="register-form-agreement">
                 <input class="register-form-checkbox visually-hidden" 
                 type="checkbox">
 
@@ -122,7 +147,7 @@
                     <a class="register-form-link"
                      href="" 
                      target="_blank">Умови договору</a> </span>
-            </label>
+            </label> -->
 
             <button class="register-form-btn" 
             type="submit">Відправити</button>
@@ -386,7 +411,7 @@
     <!--Підвал сторінки-->
     <footer class=" futer " >
         <div class="container basement" > 
-        <div class="">
+        <div class="futer-first">
         <a class="webs-top" href=""> <span class="weba">Web</span>Studio</a>
         <address>
             <ul >
