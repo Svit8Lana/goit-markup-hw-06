@@ -215,7 +215,7 @@ pointer-events: none;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
 transition-property: color;
-    transition-duration: 2250ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -232,22 +232,18 @@ justify-content: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+   outline: none;
     /* background-color: var(--accent-color-title); */
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 
 
-/* .modal-btn-svg {
+.modal-btn:focus {
+    fill: var(--accent-color-hover-icon);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-
-.modal-btn-svg:hover
-.modal-btn-svg:focus {
-fill:   aquamarine;
-        
     }
+
 
  .click {
 font-family: Roboto, sans-serif;
@@ -296,6 +292,7 @@ display: block;
     position: relative;
     display: block;
     text-align: start;
+    margin-top: 10px;
 }
 
 .register-form-label {
@@ -303,6 +300,7 @@ display: block;
         line-height: 1.16;
         letter-spacing: 0.01em;
         color: var(--paragraph-color);
+        
    
 }
 
@@ -437,11 +435,16 @@ display: flex;
         border: none;
         border-radius: 4px;
         
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
 }
 
-
+.register-form-btn:hover,
+.register-form-btn:focus { 
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+}
 
 /* section 2*/
 .sect { font-size: 0px; }
@@ -695,13 +698,12 @@ padding-top: 60px;
 padding-bottom: 60px;
 }
 
-/* .futer-first {
+.futer-first {
     margin-right: 70px;
-} */
+}
 
 .basement {
 display: flex;
-    /* gap: 70px; */
     align-items: baseline;
 }
 
@@ -749,10 +751,12 @@ line-height: 1.71;
 /* Приєднуйтесь */
 .join {
 
-margin-left: 93px;
+/* margin-left: 93px; */
 }
 
-
+.caput {
+    margin-right: 93px;
+}
 .join h3 {
     font-family: 'Roboto';
     font-style: normal;
