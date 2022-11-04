@@ -232,13 +232,22 @@ justify-content: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-    background-color: var(--accent-color-title);
+    /* background-color: var(--accent-color-title); */
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:focus {
-    border-color: var(--accent-color-button);
-}
+
+
+/* .modal-btn-svg {
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+
+.modal-btn-svg:hover
+.modal-btn-svg:focus {
+fill:   aquamarine;
+        
+    }
 
  .click {
 font-family: Roboto, sans-serif;
@@ -266,12 +275,13 @@ font-family: Roboto, sans-serif;
 }
 
 
+
+
 /* Register form */
 
-/* .register-form {
-    padding: 40px;
-} */
-
+.register-form-group {
+    margin-bottom: 20px;
+}
 
 .register-form-title {
 display: block;
@@ -285,19 +295,15 @@ display: block;
 .register-form-field {
     position: relative;
     display: block;
-    margin-bottom: 10px;
+    text-align: start;
 }
 
 .register-form-label {
-display: flex;
-    align-items: flex-start;
-        justify-content: flex-start;
-   /* position: absolute; */
     font-size: 12px;
         line-height: 1.16;
         letter-spacing: 0.01em;
         color: var(--paragraph-color);
-    margin-bottom: 4px;
+   
 }
 
 .register-form-input {
@@ -309,6 +315,7 @@ display: flex;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+margin-top: 4px;
 }
 
 .register-form-input:focus {
@@ -317,11 +324,11 @@ display: flex;
 
 .register-form-icon {
     position: absolute;
-    /* top: 50%; */
+    top: 50%;
     left: 10px;
     margin-top: 11px;
     margin-bottom: 11px;
-/* transform: translateY(-50%); */
+transform: translateY(-50%);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -330,14 +337,11 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form-heading {
-position: absolute;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--paragraph-color);
-    top: 0; 
-    left: 0;
-    transform: translateY(-120%);
+  
 
 }
 
@@ -356,7 +360,7 @@ outline: transparent;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 
-margin-top: 40px;
+margin-top: 4px;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -369,6 +373,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .check-text span {
@@ -409,15 +414,10 @@ display: flex;
 }
 
 
-/* .register-form-desc {
-    font-size: 14px;
-    user-select: none;
-    display: flex;
-
-} */
 
 .register-form-link {
     color: var(--accent-color-web);
+    margin-left: 5px;
 }
 
 
@@ -749,7 +749,7 @@ line-height: 1.71;
 /* Приєднуйтесь */
 .join {
 
-margin-left: 70px;
+margin-left: 93px;
 }
 
 
@@ -808,10 +808,13 @@ margin-left: 70px;
     justify-content: center;
 }
 
-.footer-form-group {
-    display: flex;
+
+.footer-form {
+display: flex;
     gap: 12px;
 }
+
+   
 
 .footer-form-input { 
 padding: 15px 16px;
