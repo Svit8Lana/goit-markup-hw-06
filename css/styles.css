@@ -8,7 +8,8 @@
     --accent-color-rgba: rgba(255, 255, 255, 0.6);
     --accent-color-emailink: rgba(255, 255, 255, 1);
     --accent-color-hero: #2F303A;
-    /* колір 40% hero #C4C4C4; */
+    --accent-color-heroC4: #C4C4C4;
+    /* колір 40% hero #C4C4C4; */ 
     --accent-color-button: #188CE8;
     --accent-color-but: #F5F4FA;
     --accent-color-section-fon: #F5F5F5;
@@ -151,13 +152,13 @@ bottom: -1px;
 /* hero   */
 
 .hero { 
-background-color: var(--accent-color-hero); 
+background-color: var(--accent-color-heroC4); 
 padding-top: 200px;
 padding-bottom: 200px; 
    text-align: center;
 
 max-width: 1600px;
-    height: 600px;
+    /* height: 600px; */
     margin-left: auto;
     margin-right: auto;
 background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
@@ -209,6 +210,7 @@ pointer-events: none;
     transform: translate(-50%, -50%);
     width: 528px;
         height: 581px;
+       
         padding: 40px;
         background-color: var(--accent-color-title);
         border-radius: 4px;
@@ -217,6 +219,7 @@ pointer-events: none;
 transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
     }
 
 .modal-btn {
@@ -239,7 +242,8 @@ justify-content: center;
 
 
 
-.modal-btn:focus {
+.modal-btn:focus,
+.modal-btn:hover {
     fill: var(--accent-color-hover-icon);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -292,8 +296,19 @@ display: block;
     position: relative;
     display: block;
     text-align: start;
-    margin-top: 10px;
+   height: 58px;
 }
+
+.register-form-field:not(:first-child){
+    margin-top: 10px;
+  
+}
+
+.register-form-field:last-child {
+    
+    height: 138px;
+}
+
 
 .register-form-label {
     font-size: 12px;
@@ -307,7 +322,7 @@ display: block;
 .register-form-input {
     width: 100%;
     padding: 11px;
-        padding-left: 42px;
+        padding-left: 40px;
         font: inherit;
     outline: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -757,7 +772,7 @@ line-height: 1.71;
 .caput {
     margin-right: 93px;
 }
-.join h3 {
+/* .join h3 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -767,8 +782,19 @@ line-height: 1.71;
     text-transform: uppercase;
     color: var(--accent-color-title);
     margin-bottom: 20px;
+} */
 
-}
+.join-p { 
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--accent-color-title);
+        margin-bottom: 20px;
+ }
 
 .join-fut {
     display: flex;
